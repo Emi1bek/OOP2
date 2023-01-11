@@ -2,26 +2,43 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /*** обект тузуп атабыз***/
-        Person andrey = new Person();
+        System.out.println("Этот программа находит плошад триугольника !");
+        TriangleArea first = new TriangleArea();
         Scanner sc = new Scanner(System.in);
-
-        /*** обьектинин переменныйларына маани беруу***/
-        System.out.println("Как вас завуд? ");
-        andrey.namePerson = sc.nextLine();
-        System.out.println("Сколько вам лет? ");
-        andrey.agePerson = sc.nextInt();
-        /*** Массивтин колумун консолдон суроо ***/
-        System.out.println("Сколько языков вы знаете? ");
-        int a;
-        a= sc.nextInt();
-        andrey.Languages = new String[a];
+        System.out.println("Дайте значение A!");
+        first.a = sc.nextDouble();
+        System.out.println("Дайте значение B!");
+        first.b = sc.nextDouble();
+        System.out.println("Дайте значение C!");
+        first.c = sc.nextDouble();
 
 
-        /*** обект чыкыруу***/
+        first.area();
 
-        andrey.getlanguages(andrey.Languages );
-        andrey.getAge();
+
+
+
+//
+//        /*** обект тузуп атабыз***/
+//        Person andrey = new Person();
+//        Scanner sc = new Scanner(System.in);
+//
+//        /*** обьектинин переменныйларына маани беруу***/
+//        System.out.println("Как вас завут? ");
+//        andrey.namePerson = sc.nextLine();
+//        System.out.println("Сколько вам лет? ");
+//        andrey.agePerson = sc.nextInt();
+//        /*** Массивтин колумун консолдон суроо ***/
+//        System.out.println("Сколько языков вы знаете? ");
+//        int a;
+//        a= sc.nextInt();
+//        andrey.Languages = new String[a];
+//
+//
+//        /*** обект чыкыруу***/
+//
+//        andrey.getlanguages(andrey.Languages );
+//        andrey.getAge();
 
 
 
